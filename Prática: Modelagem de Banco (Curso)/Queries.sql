@@ -1,6 +1,6 @@
 CREATE TABLE "alunos" (
     "id" SERIAL PRIMARY KEY,
-    "nome" SERIAL PRIMARY KEY,
+    "nome" TEXT NOT NULL,
     "cpf" VARCHAR(11) NOT NULL UNIQUE,
     "email" TEXT NOT NULL UNIQUE,
     "turma_id" INTEGER REFERENCES "turma"("id"),
